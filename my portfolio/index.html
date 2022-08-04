@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>my portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/ac4d8ae834.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="personal-portfolio-img\images\myname-removebg-preview.png" alt=""
+                class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#portfolio">portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Web Developer</p>
+                <h1>Hi, I'm <span> Nikhil</span> <br> from mumbai</h1>
+            </div>
+        </div>
+    </div>
+
+    <!-- about -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="personal-portfolio-img\images\1659356078343-removebg-preview.png" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="subtitle">About Me</h1>
+                    <p>Hey, I'm coding all the time. when I'm not coding I'm roaming around on my cycle</p>
+                         <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('skills')">skills</p>
+                            <p class="tab-links" onclick="opentab('experience')">experience</p>
+                            <p class="tab-links" onclick="opentab('education')">education</p>
+                         </div>
+                         <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>HTML/CSS</span><br>Advance</li>
+                                <li><span>Bootstrap</span><br>Advance</li>
+                                <li><span>Javascript</span><br>Intermediate</li>
+                                <li><span>React</span><br>Intermediate</li>
+                                <li><span>NodeJS</span><br>Intermediate</li>
+                                <li><span>MongoDB</span><br>Basic</li>
+                                <li><span>JQuery</span><br>Intermediate</li>
+                                <li><span>MySQL</span><br>Intermediate</li>
+                                
+                            </ul>
+                         </div>
+                         <div class="tab-contents" id="experience">
+                            <ul>
+                                <li><span>Instagram Clone</span><br>MERN Stack</li>
+                                <li><span>Netflix clone</span><br>ReactJS app</li>
+                                <li><span>Spotify clone</span><br>ReactJS app</li>
+                            </ul>
+                         </div>
+                         <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>SSC</span><br>90%</li>
+                                <li><span>HSC</span><br>74%</li>
+                                <li><span>Bsc IT</span><br>57.49%</li>
+                            </ul>
+                         </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- portfolio -->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Projects</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="personal-portfolio-img\images\Instagram_icon.png.webp" alt="">
+                <div class="layer">
+                    <h3>Instagram Clone</h3>
+                    <p>A MERN stack instagram clone </p>
+                    <a href="https://github.com/rathodnik97/instagram-clone"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="personal-portfolio-img\images\netflix.png" alt="">
+                <div class="layer">
+                    <h3>Netflix Clone</h3>
+                    <p>A project that shows my understanding of Reactjs  </p>
+                    <a href="https://github.com/rathodnik97/netflix_clone"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="personal-portfolio-img\images\unnamed.png" alt="">
+                <div class="layer">
+                    <h3>Spotify Clone</h3>
+                    <p>An advance reactjs app </p>
+                    <a href="https://github.com/rathodnik97/spotify_clone"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- contact -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i>rathod.nikhilJ97@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i>9987050655</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/nikhil.rathod.758399/about?lst=100004249355894%3A100004249355894%3A1540381219&section=bio"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://github.com/rathodnik97"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.instagram.com/rathod_nikkhil/"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/nikhil-rathod-1a74bb247/"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                <a href="personal-portfolio-img\images\Nikhil Resume.pdf" class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your E-mail" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>copyright © <br> Made with <i class="fa-solid fa-heart"></i> Nikhil</p>
+        </div>
+    </div>
+</div>
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+       function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("activ-link");
+        document.getElementById(tabname).classList.add("active-tab");
+       }
+    </script>
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+        function closemenu(){
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+</body>
+</html>
